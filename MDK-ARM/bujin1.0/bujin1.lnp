@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"bujin1.0\startup_stm32f103xb.o"
+"bujin1.0\main.o"
+"bujin1.0\gpio.o"
+"bujin1.0\tim.o"
+"bujin1.0\stm32f1xx_it.o"
+"bujin1.0\stm32f1xx_hal_msp.o"
+"bujin1.0\stm32f1xx_hal_gpio_ex.o"
+"bujin1.0\stm32f1xx_hal_tim.o"
+"bujin1.0\stm32f1xx_hal_tim_ex.o"
+"bujin1.0\stm32f1xx_hal.o"
+"bujin1.0\stm32f1xx_hal_rcc.o"
+"bujin1.0\stm32f1xx_hal_rcc_ex.o"
+"bujin1.0\stm32f1xx_hal_gpio.o"
+"bujin1.0\stm32f1xx_hal_dma.o"
+"bujin1.0\stm32f1xx_hal_cortex.o"
+"bujin1.0\stm32f1xx_hal_pwr.o"
+"bujin1.0\stm32f1xx_hal_flash.o"
+"bujin1.0\stm32f1xx_hal_flash_ex.o"
+"bujin1.0\stm32f1xx_hal_exti.o"
+"bujin1.0\system_stm32f1xx.o"
+"bujin1.0\motor.o"
+--strict --scatter "bujin1.0\bujin1.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "bujin1.map" -o bujin1.0\bujin1.0
