@@ -1,2 +1,4 @@
 # 42_motor
 STM32 HAL库42步进电机
+
+![91C92C5C3986C3D7CA49567D1C419AFE](https://github.com/NGC2237plus/42_motor/assets/130153796/77c995f9-7ca9-44ca-9eef-341231a1f6cd)
