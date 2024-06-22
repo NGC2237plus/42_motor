@@ -16,6 +16,7 @@
 #define MOTOR_PUL_Pin GPIO_PIN_3
 #define MOTOR_DIR_GPIOx GPIOA
 #define MOTOR_DIR_Pin GPIO_PIN_4
+#define Pulse_rev 800 // 细分32/800
 
 __IO int Time_Count;      // 计数器，定时器周期625us
 int time0 = 0, time1 = 0; // 测试用
@@ -45,7 +46,7 @@ void Motor(uint8_t DIR, uint16_t Angle, uint16_t Angle_Speed)
 {
     int Frequency = Angle_Speed / (360 * 0.00125f); // 频率HZ
     int Cycle = 1000000 / Frequency;                // 周期us
-    int PUL_Number = (Angle / 360.f) * 800;         // 脉冲个数
+    int PUL_Number = (Angle / 360.f) * Pulse_rev;   // 脉冲个数
 
     HAL_GPIO_WritePin(MOTOR_DIR_GPIOx, MOTOR_DIR_Pin, DIR);
     int i;
