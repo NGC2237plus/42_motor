@@ -3,8 +3,8 @@
  * Auto generated Run-Time-Environment Component Configuration File
  *      *** Do not modify ! ***
  *
- * Project: 'bujin1.0' 
- * Target:  'bujin1.0' 
+ * Project: 'bujin_motor' 
+ * Target:  'bujin_motor' 
  */
 
 #ifndef RTE_COMPONENTS_H

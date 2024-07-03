@@ -1,17 +1,17 @@
 {
     "configurations": [
         {
-            "name": "bujin1.0",
+            "name": "bujin_motor",
             "includePath": [
-                "e:\\STMicroelectronics\\RM\\bujin1.0\\Core\\Inc",
-                "e:\\STMicroelectronics\\RM\\bujin1.0\\Drivers\\STM32F1xx_HAL_Driver\\Inc",
-                "e:\\STMicroelectronics\\RM\\bujin1.0\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy",
-                "e:\\STMicroelectronics\\RM\\bujin1.0\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include",
-                "e:\\STMicroelectronics\\RM\\bujin1.0\\Drivers\\CMSIS\\Include",
-                "e:\\STMicroelectronics\\RM\\bujin1.0\\application",
-                "e:\\STMicroelectronics\\RM\\bujin1.0\\MDK-ARM",
-                "e:\\STMicroelectronics\\RM\\bujin1.0\\Core\\Src",
-                "e:\\STMicroelectronics\\RM\\bujin1.0\\Drivers\\STM32F1xx_HAL_Driver\\Src"
+                "e:\\STMicroelectronics\\RM\\bujin_motor\\Core\\Inc",
+                "e:\\STMicroelectronics\\RM\\bujin_motor\\Drivers\\STM32F1xx_HAL_Driver\\Inc",
+                "e:\\STMicroelectronics\\RM\\bujin_motor\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy",
+                "e:\\STMicroelectronics\\RM\\bujin_motor\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include",
+                "e:\\STMicroelectronics\\RM\\bujin_motor\\Drivers\\CMSIS\\Include",
+                "e:\\STMicroelectronics\\RM\\bujin_motor\\application",
+                "e:\\STMicroelectronics\\RM\\bujin_motor\\MDK-ARM",
+                "e:\\STMicroelectronics\\RM\\bujin_motor\\Core\\Src",
+                "e:\\STMicroelectronics\\RM\\bujin_motor\\Drivers\\STM32F1xx_HAL_Driver\\Src"
             ],
             "defines": [
                 "USE_HAL_DRIVER",

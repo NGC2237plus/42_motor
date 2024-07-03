@@ -55,7 +55,7 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint16_t dir = 1, angle = 360, speed = 360;
+int aa[3];
 /* USER CODE END 0 */
 
 /**
@@ -88,17 +88,27 @@ int main(void)
   MX_GPIO_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-  HAL_TIM_Base_Start_IT(&htim2);
+  HAL_TIM_Base_Start_IT(&htim2); // Turn on timer
+
+  // Initialize 4 motors
+  Motor_Init(&Motor_Hip_R, GPIOA, GPIO_PIN_0, GPIOA, GPIO_PIN_1);
+  Motor_Init(&Motor_Hip_L, GPIOA, GPIO_PIN_2, GPIOA, GPIO_PIN_3);
+  Motor_Init(&Motor_Knee_R, GPIOA, GPIO_PIN_4, GPIOA, GPIO_PIN_5);
+  Motor_Init(&Motor_Knee_L, GPIOA, GPIO_PIN_6, GPIOA, GPIO_PIN_7);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    Motor(dir, angle, speed);
+
+    Motor(&Motor_Hip_R, 1, 360, 360); // Rotate the motor at the right hip joint position 360 degrees per second
+    Motor(&Motor_Hip_L, 1, 180, 180); // Rotate the motor at the left hip joint position 180 degrees per second
+    Motor_Start();                    // Start the motor and start rotating
     HAL_Delay(1000);
   }
   /* USER CODE END 3 */
