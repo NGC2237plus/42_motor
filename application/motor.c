@@ -82,7 +82,7 @@ void Motor_Start(void)
     Time_Count = 0;
     while (Exit < 4)
     {
-        Exit = test(&Motor_Hip_R) + test(&Motor_Hip_L) + test(&Motor_Knee_R) + test(&Motor_Knee_L);
+        Exit = Motor_PWM(&Motor_Hip_R) + Motor_PWM(&Motor_Hip_L) + Motor_PWM(&Motor_Knee_R) + Motor_PWM(&Motor_Knee_L);
     }
 }
 /**

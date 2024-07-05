@@ -106,8 +106,8 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-    Motor(&Motor_Hip_R, 1, 360, 360); // Rotate the motor at the right hip joint position 360 degrees per second
-    Motor(&Motor_Hip_L, 1, 180, 180); // Rotate the motor at the left hip joint position 180 degrees per second
+    Motor_Set(&Motor_Hip_R, 1, 360, 360); // Rotate the motor at the right hip joint position 360 degrees per second
+    Motor_Set(&Motor_Hip_L, 1, 180, 180); // Rotate the motor at the left hip joint position 180 degrees per second
     Motor_Start();                    // Start the motor and start rotating
     HAL_Delay(1000);
   }

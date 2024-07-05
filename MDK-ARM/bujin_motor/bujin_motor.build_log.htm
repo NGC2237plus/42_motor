@@ -21,18 +21,25 @@ Target DLL:      CMSIS_AGDI.dll V1.21.0.0
 Dialog DLL:      TCM.DLL V1.14.4.0
  
 <h2>Project:</h2>
-E:\STMicroelectronics\RM\bujin_motor\MDK-ARM\bujin_motor.uvprojx
+D:\Github\repository\42_motor\MDK-ARM\bujin_motor.uvprojx
 Project File Date:  07/03/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.05 update 1 (build 106)', folder: 'E:\keil5\mdk514\ARM\ARMCC\Bin'
 Build target 'bujin_motor'
+compiling main.c...
+compiling motor.c...
+..\application\motor.c(73): warning:  #188-D: enumerated type mixed with another type
+      HAL_GPIO_WritePin(Motor->MOTOR_DIR_GPIOx, Motor->MOTOR_DIR_Pin, DIR);
+..\application\motor.c(100): warning:  #188-D: enumerated type mixed with another type
+              HAL_GPIO_WritePin(Motor->MOTOR_PUL_GPIOx, Motor->MOTOR_PUL_Pin, 1);
+..\application\motor.c(105): warning:  #188-D: enumerated type mixed with another type
+              HAL_GPIO_WritePin(Motor->MOTOR_PUL_GPIOx, Motor->MOTOR_PUL_Pin, 0);
+..\application\motor.c: 3 warnings, 0 errors
 linking...
-bujin_motor\bujin_motor.axf: Error: L6218E: Undefined symbol Motor (referred from main.o).
-bujin_motor\bujin_motor.axf: Error: L6218E: Undefined symbol test (referred from motor.o).
-Not enough information to list image symbols.
-Finished: 1 information, 0 warning and 2 error messages.
-"bujin_motor\bujin_motor.axf" - 2 Error(s), 0 Warning(s).
+Program Size: Code=5408 RO-data=304 RW-data=28 ZI-data=1868  
+FromELF: creating hex file...
+"bujin_motor\bujin_motor.axf" - 0 Error(s), 3 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -43,7 +50,7 @@ Package Vendor: ARM
    * Component: CORE Version: 3.40.0
 
 <h2>Collection of Component include folders:</h2>
-  E:\STMicroelectronics\RM\bujin_motor\MDK-ARM\RTE
+  D:\Github\repository\42_motor\MDK-ARM\RTE
   E:\keil5\mdk514\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
   E:\keil5\mdk514\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
 
@@ -51,7 +58,6 @@ Package Vendor: ARM
 
    * Component: ARM::CMSIS:CORE:3.40.0
       Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
-Target not created.
 </pre>
 </body>
 </html>

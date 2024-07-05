@@ -473,11 +473,11 @@ ARM Macro Assembler    Page 8
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
 ork --depend=bujin_motor\startup_stm32f103xb.d -obujin_motor\startup_stm32f103x
-b.o -IE:\STMicroelectronics\RM\bujin_motor\MDK-ARM\RTE -IE:\keil5\mdk514\ARM\PA
-CK\ARM\CMSIS\4.2.0\CMSIS\Include -IE:\keil5\mdk514\ARM\PACK\Keil\STM32F1xx_DFP\
-2.2.0\Device\Include --predefine="__UVISION_VERSION SETA 514" --predefine="_RTE
-_ SETA 1" --predefine="STM32F10X_MD SETA 1" --list=startup_stm32f103xb.lst star
-tup_stm32f103xb.s
+b.o -ID:\Github\repository\42_motor\MDK-ARM\RTE -IE:\keil5\mdk514\ARM\PACK\ARM\
+CMSIS\4.2.0\CMSIS\Include -IE:\keil5\mdk514\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\D
+evice\Include --predefine="__UVISION_VERSION SETA 514" --predefine="_RTE_ SETA 
+1" --predefine="STM32F10X_MD SETA 1" --list=startup_stm32f103xb.lst startup_stm
+32f103xb.s
 
 
 
