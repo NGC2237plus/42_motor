@@ -1,18 +1,18 @@
 /**
  * @file motor.c
- * @author ÔçÉÏ»µ (star32349@outlook.com)
+ * @author æ—©ä¸Šå (star32349@outlook.com)
  * @brief
  * @version 0.1
  * @date 2024-07-03
  *
- * @copyright Copyright (c) 2024 ³É¶¼´óÑ§(Chengdu University)
+ * @copyright Copyright (c) 2024 æˆéƒ½å¤§å­¦(Chengdu University)
  *  All rights reserved.
  *
  * @see https://github.com/NGC2237plus/42_motor
  */
 #include "motor.h"
 
-#define Pulse_rev 800  // Ï¸·Ö32/800,Pulse/rev=800
+#define Pulse_rev 800  // ç»†åˆ†32/800,Pulse/rev=800
 #define Time_Cycle 100 // Timer cycle
 __IO int Time_Count;   // count
 int time0 = 0, time1 = 0;
@@ -31,7 +31,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
             Time_Count = 0;
         }
         time0++;
-        if (time0 >= 100000) // 1Ãë,1 second
+        if (time0 >= 100000) // 1ç§’,1 second
         {
             time1++;
             time0 = 0;

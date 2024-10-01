@@ -1,11 +1,11 @@
 /**
  * @file motor.h
- * @author ÔçÉÏ»µ (star32349@outlook.com)
+ * @author æ—©ä¸Šå (star32349@outlook.com)
  * @brief
  * @version 0.1
  * @date 2024-06-22
  *
- * @copyright Copyright (c) 2024 ³É¶¼´óÑ§(Chengdu University)
+ * @copyright Copyright (c) 2024 æˆéƒ½å¤§å­¦(Chengdu University)
  *  All rights reserved.
  *
  * @see https://github.com/NGC2237plus/42_motor
@@ -21,13 +21,13 @@ typedef struct
     uint16_t MOTOR_PUL_Pin;
     GPIO_TypeDef *MOTOR_DIR_GPIOx;
     uint16_t MOTOR_DIR_Pin;
-    uint8_t DIR;          // Ğı×ª·½Ïò
-    uint16_t Angle;       // Ğı×ª½Ç¶È
-    uint16_t Angle_Speed; // Ğı×ªËÙ¶È
-    int Frequency;      // ÆµÂÊHZ
-    int Cycle;          // ÖÜÆÚus
-    int PUL_Number;       // Âö³å¸öÊı
-    int PUL_Count;        // Âö³å¼ÆÊı
+    uint8_t DIR;          // æ—‹è½¬æ–¹å‘
+    uint16_t Angle;       // æ—‹è½¬è§’åº¦
+    uint16_t Angle_Speed; // æ—‹è½¬é€Ÿåº¦
+    int Frequency;      // é¢‘ç‡HZ
+    int Cycle;          // å‘¨æœŸus
+    int PUL_Number;       // è„‰å†²ä¸ªæ•°
+    int PUL_Count;        // è„‰å†²è®¡æ•°
     uint8_t State;
     uint8_t Last_State;
 } Step_Motor;
